@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import {useEffect, useState} from "react";
 
@@ -6,7 +5,7 @@ function App() {
 
   const [data, setData] = useState(null);
   useEffect(() => {
-    fetch("http://localhost:3000/v1/products?sku=2")
+    fetch("http://localhost:5000/products")
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);
