@@ -1,4 +1,3 @@
-import './App.css';
 import {useEffect, useState} from "react";
 
 function App() {
@@ -12,7 +11,7 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div >
       <p>
         <pre><code>{JSON.stringify(data, undefined, 2)}</code></pre>
       </p>
